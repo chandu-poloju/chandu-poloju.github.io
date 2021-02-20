@@ -10,12 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Chandu Poloju</title>
 
 </head>
 
 <body>
+  <script>
+    function requestDesktopSite() {
+    document.getElementsByTagName('meta')['viewport'].content='min-width: 980px;';
+}
+  </script>
+  <input class="checkbox-cb" id="checkbox-cb" type="checkbox" />
+<div class="cookie-bar">
+  <span class="mobile">Use Desktop site for better view </span>
+    <span>
+      <button onclick="requestDesktopSite()">Click here <i class="fa fa-desktop"></i></button>
+  </span>
+  <label for="checkbox-cb" class="close-cb">x</label>
+</div>
+<br/>
+<br/>
+<br/>
     <div id="drag" class="cv instaFade wrap">
       <div class="mainDetails">
         <div id="headshot" class="">
@@ -119,9 +134,6 @@
           </section>
       </div>
     </div>
-  
-   
-  
   </body>
 
 </html>
